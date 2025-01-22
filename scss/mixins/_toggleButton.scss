@@ -1,0 +1,28 @@
+@mixin toggleButton {
+    appearance: none;
+        width: 50px;
+        height: 30px;
+        border-radius: 20px;
+        outline: none;
+        background-color: #eff3f6;
+        position: relative;
+        cursor: pointer;
+        transition: background-color 0.4s ease-in-out;
+        &::before {
+            content: '';
+            background-color: #fff;
+            top: 3px;
+            left: 3px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            position: absolute;
+            transition: transform 0.4s ease-in-out;
+        }
+        &:checked {
+            background-color: #005bff;
+            &::before {
+                transform: translateX(20px);
+            }
+        }
+}

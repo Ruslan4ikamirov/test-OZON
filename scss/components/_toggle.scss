@@ -1,0 +1,12 @@
+@use '../mixins/input';
+@use '../mixins/toggleButton';
+
+.toggle {
+    @include input.input;
+    &__animate {
+        @include toggleButton.toggleButton;
+    }
+    &__hide {
+        @include toggleButton.toggleButton;
+    }
+}

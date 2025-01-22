@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icons8-rotate-right-16.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Progress Block</title>
+</head>
+<body>
+    <div class="app">
+        <div class="app__progress">
+            <svg class="progress-ring" viewBox="0 0 120 120">
+                <circle class="progress-ring__bg" cx="60" cy="60" r="54" />
+                <circle class="progress-ring__circle" cx="60" cy="60" r="54" />
+                <span class="progress-text">Progress</span>
+            </svg>
+        </div>
+        <div class="app__controls">
+            <label class="value">
+                <input type="text" class="value__field" placeholder="0">
+                Value
+            </label>
+            <label class="toggle">
+                <input type="checkbox" class="toggle__animate">
+                Animate
+            </label>
+            <label class="toggle">
+                <input type="checkbox" class="toggle__hide">
+                Hide
+            </label>
+        </div>
+      </div>
+    <script src="scripts/script.js" type="module"></script>
+</body>
+</html>
